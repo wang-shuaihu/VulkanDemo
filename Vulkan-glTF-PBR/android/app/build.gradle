@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    ndkVersion "16.1.4479499"
     compileSdkVersion 26
     defaultConfig {
         applicationId "de.saschawillems.vulkanglTFPBR"
@@ -30,6 +31,7 @@ android {
     }
     externalNativeBuild {
         cmake {
+            version "3.10.2"
             path "CMakeLists.txt"
         }
     }
